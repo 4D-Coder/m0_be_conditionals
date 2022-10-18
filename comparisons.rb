@@ -59,27 +59,31 @@ puts 'Is number_students less than or equal to 21?', number_students <= 21
 # Be as technically precise as possible, but don't just copy and paste a definition from the readings.
 # Make sure YOU can explain it that way!
 
+puts "Four is less than nine."
 puts 4 < 9
 # YOU DO: Explain.
-# "Line sixty-two calls the 'puts' method; four is less than nine, 
+# "Line sixty-two calls the 'puts' method; four is less-than nine, 
 #  and prints the result of the comparison: true."
 
+puts "We want 4 books, and you have at least that many."
 books = 3
 puts 4 < books
 # YOU DO: Explain.
 # "Line sixty-six sets the variable 'books' as equal to three."
-# "Line sixty-seven calls the 'puts' method; four is less than variable 'books,' 
+# "Line sixty-seven calls the 'puts' method; four is less-than variable 'books,' 
 #  and prints the result of the comparison: false."
 
+puts "You have more friends than you have siblings."
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
 # "Line seventy-two sets the variable 'friends' as equal to six."
 # "Line seventy-seven sets the variable 'siblings' as equal to two."
-# "Line seventy-four calls the 'puts' method; variable 'friends' is greater than 'siblings,'
+# "Line seventy-four calls the 'puts' method; variable 'friends' is greater-than 'siblings,'
 #  and prints the result of the comparison: true."
 
+"We dont have as many meals as we have attendees! (Oh no!)"
 attendees = 9
 meals = 8
 puts attendees != meals
@@ -96,11 +100,13 @@ puts attendees != meals
 is_hungry = true
 finished_homework = false
 
+=begin
 # EXAMPLE:
 # Determine if the user is hungry and has completed their homework
 puts is_hungry && finished_homework
 # Determine if the user is hungry or has completed their homework
 puts is_hungry || finished_homework
+=end
 
 loves_to_play = true
 loves_dog_park = false
@@ -109,15 +115,25 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts "The dog loves to play and loves treats."
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts "The dog loves to play and loves the dog park."
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts "Its true that the dog either loves to play or loves the dog park."
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+puts "The dog loves to play and is also a puppy."
+puts loves_to_play && age <= 1
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
 # ANSWER:
+# "My final line of code evaluated to 'true.'"
+# "This is because I called 'less than or equal to' as the comparison operator" 
+# "between the variable 'age' and 1."
+# "This met both conditions being compared within this 'and statement,' and prints
+#  the result of the comparison: true."
